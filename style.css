@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #fdfdfd;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  display: inline-block;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: #eee;
+  padding: 15px;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #fafafa;
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ========= MEDIA QUERIES FOR MOBILE ========= */
+@media (max-width: 768px) {
+  /* Stack layout vertically */
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+
+  /* Make nav vertical */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Font & layout tweaks */
+  body {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
